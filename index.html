@@ -1,14 +1,21 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
+
 <html>
 
+
+
 <head>
-
-	<mate charset="utf-8">
+  
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="styles.css">
-
 </head>
 
+
+
 <body>
+
+
+
 <table>
 <tr>
 	<td>
@@ -21,43 +28,50 @@
 		<h2>
 			Камалов Айдар
 		</h2>
-			Адрес: г. Казань, ул. Недом, дом&nbsp;Неулица,&nbsp;11
-			<br>
-			Email: dog@email.net
-			<br>
-			Телефон: есть
 
+	<div id="info" class="menu">
+ 
+		<span class="title">Контактная информация</span>
+ 
+		<ul>
+     
+			 <li>Адрес: г. Казань, ул. Недом, дом&nbsp;Неулица,&nbsp;11</li>
+      
+			<li>Email: dog@email.net</li>
+     
+			<li>Телефон: есть</li>
+  
+			<li>Что-то умею</li>
+   
+		</ul>
+
+  
+	</div>
 	</td>
 	
 </tr>
-</table>
+</table> 
 
-<div class="column1">
-	<p>
-		<h3>
-			Образование
-		</h3>
-	</p>
-	<p>
-		ну там что-то знаю
-	</p>
-	<p>		
-		<h3>
-			Опыт работы
-		</h3>
-	</p>
-	<p>
-		0 секунд
-	</p>
-		<h3>
-			Личные качества
-		</h3>
-	</p>
-	<p>
-		Неразговорчивый
-	</p>
-</div>
+<script>
+   
+	var menuElem = document.getElementById('info');
+    
+	var titleElem = menuElem.querySelector('.title');
+
+    
+	
+	titleElem.onclick = function() {
+      
+		menuElem.classList.toggle('open');
+   
+	};
+  
+</script>
+
+
 
 </body>
+
+
 
 </html>
